@@ -1,0 +1,60 @@
+<script language="javascript">
+  //belajar variabel dan tip data
+  var pelanggan = 'Hayo Siapa';
+  var produk = 'AC';
+  /*
+    Tv => 3jt kulkas => 4jt ac => 5jt
+  */
+  //struktur kendali//
+  if (produk == 'TV') {
+    harsat = 3000000;
+  } else if (produk == 'Kulkas') {
+    harsat = 4000000;
+  } else if (produk == 'AC') {
+    harsat = 5000000;
+  } else {
+    harsat = 0;
+  }
+  let jmlBeli = 1;
+  let bruto = harsat * jmlBeli;
+  //ternary
+  diskon = produk == 'AC' ? 0.1 * bruto : 0;
+  /*if (produk == 'AC') diskon = 0.1 * bruto;
+  else diskon = 0;
+  */
+  //cetak
+  document.write('Data Pembelian' + '<br/>Pelanggan: ' + pelanggan + '<br/>Produk Pilihan ' + produk + '<br/>Harga Satuan: ' + harsat + '<br/>Harga Kotor: ' + bruto + '<br/> Diskon: ' + diskon);
+</script>
+
+
+<table border="1" cellpadding="10" align="center">
+    <thead bgcolor="#ffaffa">
+        <tr>
+            <th>Data</th>
+            <th>Keterangan</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Gaji Pokok</td>
+            <td>4662636</td>
+        </tr>
+        <tr>
+            <td>Tunjangan Jabatan</td>
+            <td>83246264932</td>
+        </tr>
+        <tr>
+            <td>BPJS</td>
+            <td>83246264932</td>
+        </tr>
+        <tr>
+            <td>Tunjangan Keluarga</td>
+            <td>83246264932</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <th colspan="2">Total Gaji</th>
+        </tr>
+    </tfoot>
+</table>

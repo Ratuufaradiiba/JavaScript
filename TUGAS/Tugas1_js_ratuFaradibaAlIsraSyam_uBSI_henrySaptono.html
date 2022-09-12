@@ -1,0 +1,46 @@
+<script language="javascript">
+  /*Soal 
+  Diketahui:
+    pegawai: Ridwan
+    jabatan: manager
+    status: menikah
+  */
+  var nama_pgwai = 'Ridwan';
+  let jabatan = 'Manager';
+  let status = 'Menikah';
+  //Struktur Kendali
+  if (jabatan == 'Manager') {
+    gapok = 15000000;
+  } else if (jabatan == 'Asisten Manager') {
+    gapok = 10000000;
+  } else if (jabatan == 'Staff') {
+    gapok = 5000000;
+  } else {
+    gapok = 0;
+  }
+
+  let tunjab = 0.15 * gapok;
+  let bpjs = 0.1 * gapok;
+
+  //Ternary
+  let tunkel = status == 'Menikah' ? 0.2 * gapok : 0;
+  let totalgaji = gapok + tunjab + bpjs + tunkel;
+
+  //Cetak
+  document.write("<h3 align='center'> DATA PEGAWAI </h3>" + '<br/>' + "<p align='center'>Nama Pegawai: " + nama_pgwai + '<br/>Jabatan: ' + jabatan + '<br/>Status: ' + status + '</p>');
+  document.write(
+    "<table cellpadding='10' align='center' > <thead bgcolor='#ffaffa'> <tr> <th>Data Gaji</th><th>Nominal</th></tr></thead> <tbody><tr><td>Gaji Pokok</td> <td> Rp. " +
+      gapok +
+      '</td></tr><tr><td>Tunjangan Jabatan</td> <td> Rp. ' +
+      tunjab +
+      '</td></tr><tr><td>BPJS</td><td> Rp. ' +
+      bpjs +
+      '</td></tr> <tr><td>Tunjangan Keluarga</td><td> Rp. ' +
+      tunkel +
+      "</td></tr></tbody><tfoot bgcolor='#ffaffa'><tr><th colspan='2'>Total Gaji yang dimiliki oleh " +
+      nama_pgwai +
+      ' ialah sebanyak Rp. ' +
+      totalgaji +
+      '</th></tr></tfoot></table>'
+  );
+</script>

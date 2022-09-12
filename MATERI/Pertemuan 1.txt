@@ -1,0 +1,65 @@
+H1 M4
+Pak Nasrul
+
+P1 JavaScript
+
+Operator, Variabel dan Tipe Data
+
+Pemrograman js = hal yang bisa mengolah dan menghasilkan data
+ada data i/o input, output
+
+2 tipe pemrograman
+-Compiled language= Bahasa pemrograman yang ditulis, diubah terlebih dahulu ke dalam bahasa mesin sehingga dapat dieksekusi oleh prosesor. Membutuhkan langkah “build”, yaitu kompilasi secara manual oleh programmer.
+co: c, c++,erlang,rust,go
+
+-interpreted language=Bahasa pemrograman dimana kodenya dieksekusi baris demi baris. Secara kecepatan lebih lambat daripada compiled language.
+co: php,ruby,python,javascript
+
+Cara kerja kompilasi dan interpreter
+
+Variabel=blok memori yang memiliki nama yang dapat menyimpan nilai
+
+literal=konstan atau tetap
+
+operator=
+
+keyword=
+
+modules=
+
+comments=
+
+identifiers=
+
+Javascript adalah bahasa pemrograman yang tergolong sebagai interpreted language.
+Kode Javascript dapat dijalankan di browser (melalui console/script) dan di komputer (memanfaatkan node.js). Ekstensi source code untuk kode Javascript menggunakan .js . 
+Blok kode yang lebih dari satu baris dituliskan di dalam tanda kurung kurawal ({ }). Tiap kode diakhiri dengan tanda titik koma (;) , opsional.
+
+
+variabel, var dan let const
+var=local
+let=global
+
+
+Aturan penamaan variabel
+
+untuk penamaan variabel diawali _
+gaboleh diawali angka
+case sensitive a A itu dianggap beda
+keyword gaboleh digunakan sebagai nama variabel
+
+
+Operator aritmatika,pembanding,assignment,logika
+
+VARIABEL 
+-statment->variabel->data
+
+dijava ga ada perbedaan "" atau ''
+klo string var harus "" atau ''
+kalo var char itu gausa pake
+
+
+https://www.w3schools.com/
+https://www.javapoint.com/
+https://www.tutorialspoint.com/
+
