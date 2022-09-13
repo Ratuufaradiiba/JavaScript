@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tugas 2 JS | Ratu Faradiba Al Isra Syam</title>
+  </head>
+  <body>
+    <h3 align="center">Daftar Pegawai</h3>
+    <table align="center" cellpadding="10" bgcolor="darkkhaki">
+      <thead>
+        <tr>
+          <th>No</th>
+          <th>Nama</th>
+          <th>Jabatan</th>
+          <th>Agama</th>
+          <th>Gaji Pokok</th>
+          <th>Tunjangan Jabatan</th>
+          <th>Tunjangan Kesehatan</th>
+          <th>Gaji Kotor</th>
+          <th>Zakat Profesi</th>
+          <th>Take Home Pay</th>
+        </tr>
+      </thead>
+      <tbody>
+        <script language="javascript">
+          let no, warna, agama;
+          let jabatan;
+          let gapok = 0;
+          let zakat;
+
+          for (no = 1; no <= 100; no++) {
+            warna = no % 2 == 0 ? '#ffaffa' : 'pink';
+            agama = no % 2 == 0 ? 'Non Muslim' : 'Muslim';
+
+            if (no <= 25) jabatan = 'Manager';
+            else if (no >= 26 && no <= 50) jabatan = 'Assisten Manager';
+            else if (no >= 51 && no <= 75) jabatan = 'Supervisor';
+            else if (no >= 76 && no <= 100) jabatan = 'Staff';
+            else jabatan = 'Tidak Ada';
+
+            switch (jabatan) {
+              case 'Manager':
+                gapok = 15000000;
+                break;
+              case 'Assisten Manager':
+                gapok = 10000000;
+                break;
+              case 'Supervisor':
+                gapok = 7000000;
+                break;
+              case 'Staff':
+                gapok = 4000000;
+                break;
+              default:
+                gapok = '-';
+            }
+
+            let tunjab = gapok * 0.2;
+            let tunkes = gapok * 0.1;
+            let gakot = gapok + tunjab + tunkes;
+            
+
+            if (agama == 'Muslim' && gakot >= 7000000) zakat = 0.025 * gakot;
+            else zakat = '0';
+
+            let hompey = gakot - zakat;
+
+            document.write(
+              `<tr bgcolor="${warna}">
+                  <td >${no}</td>
+                  <td >Pegawai${no}</td>
+                  <td >${jabatan}</td>
+                  <td >${agama}</td>
+                  <td >${gapok}</td>
+                  <td >${tunjab}</td>
+                  <td >${tunkes}</td>
+                  <td >${gakot}</td>
+                  <td >${zakat}</td>
+                  <td >${hompey}</td>
+               </tr>`
+            );
+          }
+        </script>
+      </tbody>
+    </table>
+  </body>
+</html>

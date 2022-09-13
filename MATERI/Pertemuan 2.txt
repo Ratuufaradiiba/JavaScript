@@ -1,0 +1,20 @@
+H2 M5
+Pak Nasrul
+
+P2 Javascript
+
+MULTI KONDISI 1 DAN 2, TERNARY #2, LOOPING for, Switch Case
+
+
+multi kondisi pake && HARUS TERPENUHI KEDUANYA
+co if(nilai > 85 && nilai <= 100) grade = "A";
+
+Switch Case bisa jadi penggaanti if else if produk
+
+2,5% 0.025
+
+pegawai no pke for
+jabatan pke if multiple
+agama pke genap dan ganjil ternary
+zakat propesi muslim non muslim dan min 7jt pake ternary
+gapok pke switch case
