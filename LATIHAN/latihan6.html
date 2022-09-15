@@ -1,0 +1,34 @@
+<form>
+  Tanggal Lahir:
+  <br />
+  <select name="tgl">
+    <script language="javascript">
+      let tgl = 1;
+      for (tgl = 1; tgl <= 31; tgl++) {
+        document.write(`<option value="${tgl}">${tgl}</option>`);
+      }
+    </script>
+  </select>
+  <select name="bln">
+    <script language="javascript">
+      let blan = ['jan','feb','mar','apr','mei','jun','jul','ags','sep','okt','nov','des'];
+      /*for (let bln in blan) {
+        document.write(`<option value="${blan[bln]}">${blan[bln]}</option>`);
+      }*/
+      for (let bln of blan) {
+        document.write(`<option value="${bln}">${bln}</option>`);
+      }
+    </script>
+  </select>
+  <select name="thn">
+    <script language="javascript">
+      let thn_now = new Date().getFullYear();
+      let thn_max = thn_now - 35;
+      let thn_min = thn_now - 17;
+      while (thn_min >= thn_max) {
+        document.write(`<option value="${thn_min}">${thn_min}</option>`);
+        thn_min--;
+      }
+    </script>
+  </select>
+</form>

@@ -1,0 +1,27 @@
+H4 M4
+Pak Nasrul
+
+p3 Js
+
+Looping while
+
+inisial diatas
+
+pedanya for 3 3 nya di dalam kurung, sedanngkan while di pisah2 
+
+LOOPING FOR DAN WHILE
+
+break dan continue
+
+continue = ttp lanjut looping walaupun co nyetak angka 13, 13 di lwt klo 1-30 langsung 14 baru lanjut smpe 30 break;
+kontinyu tidak dicetak tapi ttp looping
+break batas ga yg gabakal tercetak
+
+
+LOOPING STRUKTUR DATA YANG CUKUP BANYAK ATAU ARRAY KUDU PAKE(FOR IN)
+ATAU FOR OF
+
+KALO FOR OF VARIABEL ALIASNYA AJA GES YA yg dipanggil
+
+
+ARRAY of OBJEK
