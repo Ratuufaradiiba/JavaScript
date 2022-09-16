@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tugas 4 JavaScript | Ratu Faradiba Al Isra Syam</title>
+
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
+  <body>
+    <div class="topnav">
+      <p id="p1">Pembelian Barang dengan Konversi Kurs</p>
+    </div>
+
+    <form id="frm1" align="center">
+      <table align="center">
+        <tr>
+          <td><label>Nama Pembeli</label></td>
+          <td><input type="text" class="form-control" name="nama" /></td>
+        </tr>
+        <tr>
+          <td><label>Nama Barang</label></td>
+          <td><input type="text" class="form-control" name="barang" /></td>
+        </tr>
+        <tr>
+          <td><label>Harga Barang</label></td>
+          <td><input type="text" class="form-control" name="harga" /></td>
+        </tr>
+        <tr>
+          <td><label>Jumlah Barang</label></td>
+          <td><input type="text" class="form-control" name="jumlah" /></td>
+        </tr>
+        <tr>
+          <td><label>Valuta Asing</label></td>
+          <td>
+            <select name="valas" onchange="konversiKurs()" class="form-control">
+              <option value="">-- Pilih Valas --</option>
+              <option value="14917">-- USD --</option>
+              <option value="10590">-- SGD --</option>
+              <option value="14918">-- EUR --</option>
+            </select>
+          </td>
+        </tr>
+      </table>
+      <hr />
+      <fieldset>
+        <legend>Hasil</legend>
+        <p id="hasil"></p>
+      </fieldset>
+    </form>
+  </body>
+
+  <script>
+    function konversiKurs() {
+      let forms = document.getElementById('frm1');
+      let pembeli = forms.nama.value;
+      let brg = forms.barang.value;
+      let hrg = forms.harga.value;
+      let jml = forms.jumlah.value;
+      let vls = forms.valas.value;
+      let total = hrg * jml * vls;
+      let data = `Data pembelian <br/> 
+    <br/>Nama pembeli: ${pembeli}
+    <br/>Nama barang: ${brg}
+    <br/>Harga barang: ${hrg}
+    <br/>Jumlah barang: ${jml}
+    <br/>Valuta Asing: ${vls}
+    <br/>Total bayar: ${total}
+    `;
+
+      document.getElementById('hasil').innerHTML = data;
+    }
+  </script>
+</html>

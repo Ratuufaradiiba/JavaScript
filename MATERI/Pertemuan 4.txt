@@ -1,0 +1,13 @@
+h5 m4
+Pak Nasrul
+
+P4 JS
+
+INNER HTML MENGGUNAKAN ID
+
+DOM = Doc Obj Model
+FUNCTION
+EVENT HANDLER
+INNERHTML
+
+obj di web hirarki terbesar ialah = WINDOW
