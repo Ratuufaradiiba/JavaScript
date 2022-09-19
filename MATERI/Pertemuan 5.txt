@@ -1,0 +1,21 @@
+H1 M5
+Pak Nasrul
+
+p5 Js
+
+FUNCTION
+ struktur fungsi = keyword'function' + function name + (function parameters co a,b){function body}
+
+Function void
+Function Define By User
+function return
+function anonymous
+arrow function
+
+
+
+fungsi dibuat 1 hitung()
+switch case, abis itu pke validasi baru hasil baru break
+
+
+
