@@ -31,9 +31,10 @@
 
             dampak() {
               if (this.skal <= 2) this.dampakgempa = 'Tidak Terasa';
-              if (this.skal > 2 && this.skal <= 4) this.dampakgempa = 'Bangunan Retak-Retak';
-              if (this.skal > 4 && this.skal <= 6) this.dampakgempa = 'Bangunan Roboh';
-              if (this.skal > 6) this.dampakgempa = 'Bangunan Roboh dan Berpotensi Tsunami';
+              else if (this.skal > 2 && this.skal <= 4) this.dampakgempa = 'Bangunan Retak-Retak';
+              else if (this.skal > 4 && this.skal <= 6) this.dampakgempa = 'Bangunan Roboh';
+              else if (this.skal > 6) this.dampakgempa = 'Bangunan Roboh dan Berpotensi Tsunami';
+              else this.dampakgempa = 'tidak ada data'
               return this.dampakgempa;
             }
 
