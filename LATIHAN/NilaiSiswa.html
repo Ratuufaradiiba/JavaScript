@@ -1,0 +1,66 @@
+<script>
+  class NilaiSiswa {
+    constructor(nama, matkul, nilai) {
+      this.nama = nama;
+      this.matkul = matkul;
+      this.nilai = nilai;
+    }
+
+    getKelulusan() {
+      this.ket = this.nilai >= 60 ? 'Lulus' : 'Gagal';
+      return this.ket;
+    }
+    getGrade() {
+      if (this.nilai <= 100 && this.nilai >= 80) this.grade = 'A';
+      else if (this.nilai <= 79 && this.nilai >= 70) this.grade = 'B';
+      else if (this.nilai <= 69 && this.nilai >= 60) this.grade = 'C';
+      else if (this.nilai <= 59 && this.nilai >= 31) this.grade = 'D';
+      else if (this.nilai > 0 && this.nilai <= 30) this.grade = 'E';
+      else this.grade = 'TIDAK ADA DATA NILAI';
+      return this.grade;
+    }
+
+    getPredikat() {
+      switch (this.grade) {
+        case 'A':
+          this.predik = 'Memuaskan';
+          break;
+        case 'B':
+          this.predik = 'Bagus';
+          break;
+        case 'C':
+          this.predik = 'Cukup';
+          break;
+        case 'D':
+          this.predik = 'Kurang';
+          break;
+        case 'E':
+          this.predik = 'Buruk';
+          break;
+        default:
+          this.predik = '-';
+      }
+
+      return this.predik;
+    }
+
+    cetak() {
+      document.write(`Nama Mahasiswa: ${this.nama}
+        <br/>Mata Kuliah: ${this.matkul}
+        <br/>Nilai: ${this.nilai}
+        <br/>Keterangan: ${this.getKelulusan()}
+        <br/>Grade: ${this.getGrade()}
+        <br/>Predikat: ${this.getPredikat()}
+        <hr/>
+        `);
+    }
+  }
+
+  s1 = new NilaiSiswa('Budi', 'Mtk dasar', 70);
+  s2 = new NilaiSiswa('Siti', 'Mtk dasar', 50);
+  s3 = new NilaiSiswa('Anu', 'Mtk dasar', 90);
+
+  s1.cetak();
+  s2.cetak();
+  s3.cetak();
+</script>

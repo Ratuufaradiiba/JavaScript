@@ -1,0 +1,22 @@
+H2 M5
+Pak Nasrul
+
+P6 JS
+
+OOP = OBJECT ORIENTED PROGRAMING DI JS
+nanti di oop ada class dan object
+
+objek = hasil jadi dari sebuah class / instance
+class = blue printnya atau fondasinya
+
+Class Membernya ada 3
+-variabel
+-method
+-function 
+-spesial method = constructor
+
+buat objek manggil nama class co let n1= new bank 
+
+sebelum memanggil fungsi buat instance objek dlu co nya kek yg diatas
+
+ketika keywordnya diluar fungsi atau tidak ada di construct, pakai co: this.djasdnaskj
