@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('img/bg.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  margin: 1cm 3cm;
+}
+
+.topnav {
+  align-items: center;
+  overflow: hidden;
+  background-color: #191919;
+  padding: 2%;
+  margin-bottom: 2%;
+}
+
+#p1 {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: darkkhaki;
+  font-size: 23px;
+  text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+    border-color: darkkhaki;
+    width: 80%;
+}
+
+th{
+    height: 2cm;
+    color: darkkhaki;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+td{
+    text-align: center;
+    color: aliceblue;
+
+}

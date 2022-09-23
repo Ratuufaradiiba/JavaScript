@@ -1,0 +1,21 @@
+<script src="js/jquery-3.6.1.min.js"></script>
+<script>
+  $(document).ready(function () {
+    //ini memanggil tag
+    $('input').click(function () {
+      alert('Selamat Belajar JQuery');
+    });
+    //ini memanggil id dan class
+    $('.p1').css('background-color', 'orange');
+    $('#p2').css('background-color', 'darkkhaki');
+    //menggunakan effect
+    // $("p").hide("slow");
+    $('p').slideDown(600);
+  });
+</script>
+<h2 class="p1">Welcome To JQuery</h2>
+<h3 id="p2">Semangat Belajar JQuery di NF Computer</h3>
+<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita, velit labore ea similique obcaecati dignissimos minus dicta repellat quis natus? Rem dolorem quibusdam, quod incidunt pariatur quam deserunt minima nostrum?</p>
+<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita, velit labore ea similique obcaecati dignissimos minus dicta repellat quis natus? Rem dolorem quibusdam, quod incidunt pariatur quam deserunt minima nostrum?</p>
+<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita, velit labore ea similique obcaecati dignissimos minus dicta repellat quis natus? Rem dolorem quibusdam, quod incidunt pariatur quam deserunt minima nostrum?</p>
+<input type="submit" value="salam" name="aksi" />

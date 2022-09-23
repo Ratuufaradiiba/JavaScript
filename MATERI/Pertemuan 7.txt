@@ -1,0 +1,21 @@
+h4 m5
+Pak Nasrul
+
+p7 JS
+
+Jquery
+
+Alasan menggunakan Jquery
+Kemampuan Jquery
+cara kerja jquery
+
+
+datatables.net untuk datatabel
+
+ada audio yang ditampilkan
+
+pas diklik tampil gambar dan suara
+
+pake accordion untuk kategori hewan
+
+unggas, ternak, buas
